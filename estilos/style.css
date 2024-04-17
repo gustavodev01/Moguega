@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'K2D-Regular';
+	src: url("../fontes/KD2/K2D-Regular.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'K2D-ExtraLight';
+	src: url("../fontes/KD2/K2D-ExtraLight.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'Norican';
+	src: url("../fontes/Norican/Norican-Regular.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'Inter-ExtraLight';
+	src: url("../fontes/Inter/Inter-ExtraLight.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'Almarai-Light';
+	src: url("../fontes/Almarai/Almarai-Light.ttf");
+	font-size: 1em;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1C1E21;
+}
+
+section.background {
+    display: flex;
+    padding-top: 1px;
+    background: #141414 url(../imagens/banner-home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 55%;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    height: 55px;
+}
+
+header #logotipo {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    transform: translate(-50%);
+}
+
+header nav {
+    text-align: center;
+    width: 100%;
+    height: 55px;
+}
+
+header ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+header nav ul a {
+    width: 24px;
+    height: 24px;
+}
+
+header li {
+    color: #fff;
+}
+
+header .icone-menu {
+    width: 24px;
+    height: 24px;
+}
+
+header #icone-usuario {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+#slogan {
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    letter-spacing: -2px;
+}
+
+#slogan h1,h2 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+
+#slogan h1 {
+    font-family: 'K2D-Regular';
+    font-size: 45px;
+    margin: 0;
+}
+
+#slogan h2 {
+    position: relative;
+    bottom: 75px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Norican';
+    font-size: 38px;
+    box-shadow: #1C1E21;
+}
+
+#slogan span {
+    display: flex;
+    justify-content: center;
+}
+
+#slogan button {
+    bottom: 45px;
+    position: relative;
+    font-family: 'Inter-ExtraLight';
+    width: 150px;
+    padding: 7px 15px;
+    border-radius: 0;
+    color: #ffffff;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-bg: rgba(190, 190, 190, 0.5);
+    --bs-btn-hover-border-color: #ffffff;
+    --bs-btn-active-bg: #ffffff6e;
+    --bs-btn-active-border-color: #ffffff;
+    --bs-btn-font-size: 18px;
+}
+
+section.degrade {
+    background: linear-gradient(to top, #141414, #292929);
+    height: fit-content;
+    border-radius: 12px;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, .5);
+}
+
+.degrade-content {
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 12px #000;
+}
+
+.degrade-content h3 {
+    font-size: 37px;
+    text-align: left;
+    color: #fff;
+    font-family: 'Almarai-Light';
+    line-height: 1.1;
+}
+
+.degrade-content span {
+    color: #029BE7;
+    text-transform: uppercase;
+    font-family: 'K2D-ExtraLight';
+}
+
