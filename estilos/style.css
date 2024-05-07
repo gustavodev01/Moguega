@@ -165,7 +165,7 @@ header #icone-usuario {
     text-align: center;
     margin: 0 auto;
     background:
-        radial-gradient(circle at 20% 50%, rgb(26, 26, 26), transparent),
+        radial-gradient(circle at 20% 50%, #2D2D2D, transparent),
         radial-gradient(circle at 50% 50%, rgba(68, 68, 65, 0.6), transparent),
         radial-gradient(circle at 80% 50%, rgba(41, 41, 41, 0.6), transparent);
     width: 100%;
