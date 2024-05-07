@@ -25,6 +25,12 @@
 }
 
 @font-face {
+	font-family: 'Inter-Light';
+	src: url("../fontes/Inter/Inter-Light.ttf");
+	font-size: 1em;
+}
+
+@font-face {
 	font-family: 'Almarai-Light';
 	src: url("../fontes/Almarai/Almarai-Light.ttf");
 	font-size: 1em;
@@ -40,7 +46,7 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: #1C1E21;
+    background-color: #0E0E0E;
 }
 
 section.background {
@@ -128,7 +134,7 @@ header #icone-usuario {
     justify-content: flex-end;
     font-family: 'Norican';
     font-size: 38px;
-    box-shadow: #1C1E21;
+    box-shadow: #000;
 }
 
 #slogan span {
@@ -152,23 +158,31 @@ header #icone-usuario {
     --bs-btn-font-size: 18px;
 }
 
-section.degrade {
-    background: linear-gradient(to top, #141414, #292929);
-    height: fit-content;
-    border-radius: 12px;
+.degrade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background:
+        radial-gradient(circle at 20% 50%, rgb(26, 26, 26), transparent),
+        radial-gradient(circle at 50% 50%, rgba(68, 68, 65, 0.6), transparent),
+        radial-gradient(circle at 80% 50%, rgba(41, 41, 41, 0.6), transparent);
+    width: 100%;
+    height: 180px;
     box-shadow: 0px -10px 10px rgba(0, 0, 0, .5);
 }
 
 .degrade-content {
     width: 80%;
     margin: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 0;
     text-shadow: 0px 0px 12px #000;
 }
 
 .degrade-content h3 {
-    font-size: 37px;
+    margin: 0;
+    font-size: 34px;
     text-align: left;
     color: #fff;
     font-family: 'Almarai-Light';
@@ -179,5 +193,32 @@ section.degrade {
     color: #029BE7;
     text-transform: uppercase;
     font-family: 'K2D-ExtraLight';
+}
+
+.faixa {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #02151C, #003437);
+    width: 100vw;
+    height: 78px;
+}
+
+.faixa-content {
+    padding: 5px; 
+}
+
+.faixa h4 {
+    font-family: 'Inter-ExtraLight';
+    font-size: 28px;
+    margin: 0;
+}
+
+.faixa a{
+    color: #029BE7;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Inter-ExtraLight';
+
 }
 
