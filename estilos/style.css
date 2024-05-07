@@ -45,7 +45,7 @@
  
 html, body {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     background-color: #0E0E0E;
 }
 
@@ -156,6 +156,11 @@ header #icone-usuario {
     --bs-btn-active-bg: #ffffff6e;
     --bs-btn-active-border-color: #ffffff;
     --bs-btn-font-size: 18px;
+    transition: 0.4s;
+}
+
+#slogan button:hover {
+    border-radius: 12px;
 }
 
 .degrade {
@@ -215,10 +220,18 @@ header #icone-usuario {
 }
 
 .faixa a{
+    position: relative;
     color: #029BE7;
     font-size: 25px;
     text-transform: uppercase;
     font-family: 'Inter-ExtraLight';
+    bottom: 5px;
+    transition: 0.4s;
+}
+
+.faixa a:hover{
+    text-shadow: 0 0 20px #029BE7;
+    font-size: 27px;
 }
 
 .barbearias {
@@ -240,8 +253,13 @@ form {
     border-radius: 20px;
 }
 
-.main-form-content {
-    padding: 20px;
+.first-form-content {
+    padding: 20px 40px 40px 40px;
+}
+
+.second-form-content {
+    position: relative;
+    padding: 20px 40px 40px 40px;
 }
 
 .main-form h2 {
@@ -250,12 +268,14 @@ form {
     display: block;
 }
 
-legend {
+legend
+ {
     font-size: 16px;
     font-family: 'Inter-ExtraLight';
     margin: 5px 0;
 }
 .main-form input {
+    color: #fff;
     height: 35px;
     background-color: #1C1E21;
     width: 247px;
