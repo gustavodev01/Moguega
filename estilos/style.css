@@ -219,6 +219,48 @@ header #icone-usuario {
     font-size: 25px;
     text-transform: uppercase;
     font-family: 'Inter-ExtraLight';
-
 }
+
+.barbearias {
+    background-color: #1C1E21;
+}
+
+form {
+    background-color: #0E0E0E;
+    display: grid;
+    gap: 10px;
+}
+.main-form{
+    display: block;
+    text-align: start;
+    color:#fff;
+    background-color: #0E0E0E;
+    width: 90%;
+    margin: 33px auto;
+    border-radius: 20px;
+}
+
+.main-form-content {
+    padding: 20px;
+}
+
+.main-form h2 {
+    font-size: 36px;
+    font-family: 'Inter-ExtraLight';
+    display: block;
+}
+
+legend {
+    font-size: 16px;
+    font-family: 'Inter-ExtraLight';
+    margin: 5px 0;
+}
+.main-form input {
+    height: 35px;
+    background-color: #1C1E21;
+    width: 247px;
+    border: 0;
+    border-radius: 8px;
+}
+
 
