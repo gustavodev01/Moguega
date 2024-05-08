@@ -13,42 +13,53 @@
 <body class="barbearias" style="padding-top: 1px;">
     
     <header>
-        <a href="index.html"></a>
+        <a href="index.html" style="text-decoration: none; color: #fff; font-size: 40px; margin-left: 10px;"><</a>
     </header>
     <main class="main-form">
             
-        <div class="first-form-content">
+        
+        <form action="/submit_cadastro" method="post">
 
-            <div style="display: flex;">
-                <h2>Cadastrar barbearia</h2>
-                <img src="imagens/rect.png" alt="decoração" style="height: 120px;">
-            </div>
-            <h3>Dados básicos</h3>
-            <form action="/submit_cadastro" method="post">
-                <div>
-                    <legend for="nome_barbearia">Nome da Barbearia*</legend>
-                    <input type="text" id="nome_barbearia" name="nome_barbearia" required>
-                </div>
-                <div>
-                    <legend for="nome_profissional">Nome do Profissional*</legend>
-                    <input type="text" id="nome_profissional" name="nome_profissional" required>
-                </div>
-                <div>
-                    <legend for="telefone_contato">Telefone para Contato*</legend>
-                    <input type="phone" id="telefone_contato" name="telefone_contato" pattern="[0-9]{10,11}" style="width: 172px;" required>
-                </div>
-                <div>
-                    <legend for="email">Email*</legend>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <legend for="senha">Crie uma Senha (entre 6 e 15 caracteres)*</legend>
-                    <input type="password" id="senha" name="senha" minlength="6" maxlength="15" required>
-                </div>
-        </div>
-                <div class="second-form-content">            
+            <div class="first-form-content-size">
+
+                <div class="first-form-content">
+                    <div style="display: flex;">
+                        <h2>Cadastrar barbearia</h2>
+                        <img src="imagens/rect.png" alt="decoração" style="height: 120px;">
+                    </div>
+                    <h3>Dados básicos</h3>
                     <div>
-                        <h3>Localização</h3>
+                        <legend for="nome_barbearia">Nome da Barbearia*</legend>
+                        <input type="text" id="nome_barbearia" name="nome_barbearia" required>
+                    </div>
+                    <div>
+                        <legend for="nome_profissional">Nome do Profissional*</legend>
+                        <input type="text" id="nome_profissional" name="nome_profissional" required>
+                    </div>
+                    <div>
+                        <legend for="telefone_contato">Telefone para Contato*</legend>
+                        <input type="phone" id="telefone_contato" name="telefone_contato" pattern="[0-9]{10,11}" style="width: 172px;" required>
+                    </div>
+                    <div>
+                        <legend for="email">Email*</legend>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <legend for="senha">Crie uma Senha (entre 6 e 15 caracteres)*</legend>
+                        <input type="password" id="senha" name="senha" minlength="6" maxlength="15" required>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="second-form-content-size">
+
+                <div class="second-form-content">            
+                    <div style="display: flex;">
+                        <img src="imagens/rect.png" alt="decoração" style="height: 120px;">
+                    </div>
+                    <h3>Localização</h3>
+                    <div>
                         <legend for="nome_barbearia">País*</legend>
                         <input type="text" id="pais" name="nome_barbearia" required>
                     </div>
@@ -65,10 +76,12 @@
                         <input type="text" id="estado" name="email" required>
                     </div>  
                 </div>
+
+            </div>
             
 
-            <button type="submit">Cadastrar</button>
-            </form>
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+        </form>
     
         
     </main>

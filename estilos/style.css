@@ -243,7 +243,6 @@ header #icone-usuario {
 }
 
 form {
-    background-color: #0E0E0E;
     display: grid;
     gap: 10px;
 }
@@ -251,19 +250,28 @@ form {
     display: block;
     text-align: start;
     color:#fff;
-    background-color: #0E0E0E;
     width: 90%;
     margin: 33px auto;
+}
+
+.first-form-content-size {
+    background-color: #0E0E0E;
+    margin-top: 20px;
+    padding: 0 40px;
+    height: 600px;
     border-radius: 20px;
 }
 
-.first-form-content {
-    margin: 20px 40px 40px 40px;
+.second-form-content-size {
+    margin-top: 20px 0 20px 0;
+    background-color: #0E0E0E;
+    height: 495px;
+    padding: 0 40px;
+    border-radius: 20px;
 }
 
-.second-form-content {
-    position: relative;
-    padding: 20px 40px 40px 40px;
+.main-form img {
+    margin-left: auto;
 }
 
 .main-form h2 {
@@ -283,9 +291,24 @@ legend
     color: #fff;
     height: 40px;
     background-color: #1C1E21;
-    width: 247px;
+    width: 100%;
     border: 0;
     border-radius: 8px;
+}
+
+.main-form button {
+    width: 120px;
+    height: 50px;
+    margin: 20px 0 20px auto;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-bg: rgba(190, 190, 190, 0.5);
+    --bs-btn-hover-border-color: #ffffff;
+    --bs-btn-active-bg: #ffffff6e;
+    --bs-btn-active-border-color: #ffffff;
+    --bs-btn-font-size: 18px;
+    --bs-btn-font-family: 'Inter Extralight';
+    --bs-btn-border-radius: 0;
+    --bs-btn-bg: linear-gradient;
 }
 
 
