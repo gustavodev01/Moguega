@@ -166,7 +166,7 @@ header #icone-usuario {
 .degrade {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     text-align: center;
     margin: 0 auto;
     background:
@@ -186,12 +186,16 @@ header #icone-usuario {
 }
 
 .degrade-content h3 {
-    margin: 0;
-    font-size: 34px;
+    margin: 0 0 0 20px;
+    font-size: 30px;
     text-align: left;
     color: #fff;
     font-family: 'Almarai-Light';
     line-height: 1.1;
+}
+
+.degrade img {
+    margin-right: 14px;
 }
 
 .degrade-content span {
@@ -254,7 +258,7 @@ form {
 }
 
 .first-form-content {
-    padding: 20px 40px 40px 40px;
+    margin: 20px 40px 40px 40px;
 }
 
 .second-form-content {
@@ -266,6 +270,7 @@ form {
     font-size: 36px;
     font-family: 'Inter-ExtraLight';
     display: block;
+    margin-top: 30px;
 }
 
 legend
@@ -276,7 +281,7 @@ legend
 }
 .main-form input {
     color: #fff;
-    height: 35px;
+    height: 40px;
     background-color: #1C1E21;
     width: 247px;
     border: 0;

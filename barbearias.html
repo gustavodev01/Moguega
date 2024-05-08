@@ -19,7 +19,10 @@
             
         <div class="first-form-content">
 
-            <h2>Cadastrar barbearia</h2>
+            <div style="display: flex;">
+                <h2>Cadastrar barbearia</h2>
+                <img src="imagens/rect.png" alt="decoração" style="height: 120px;">
+            </div>
             <h3>Dados básicos</h3>
             <form action="/submit_cadastro" method="post">
                 <div>
@@ -38,34 +41,34 @@
                     <legend for="email">Email*</legend>
                     <input type="email" id="email" name="email" required>
                 </div>
-            <div>
-                <legend for="senha">Crie uma Senha (entre 6 e 15 caracteres)*</legend>
-                <input type="password" id="senha" name="senha" minlength="6" maxlength="15" required>
-            </div>
+                <div>
+                    <legend for="senha">Crie uma Senha (entre 6 e 15 caracteres)*</legend>
+                    <input type="password" id="senha" name="senha" minlength="6" maxlength="15" required>
+                </div>
         </div>
-            <div class="second-form-content">            
-                <div>
-                    <h3>Localização</h3>
-                    <legend for="nome_barbearia">País*</legend>
-                    <input type="text" id="pais" name="nome_barbearia" required>
+                <div class="second-form-content">            
+                    <div>
+                        <h3>Localização</h3>
+                        <legend for="nome_barbearia">País*</legend>
+                        <input type="text" id="pais" name="nome_barbearia" required>
+                    </div>
+                    <div>
+                        <legend for="nome_profissional">Cidade*</legend>
+                        <input type="text" id="cidade" name="nome_profissional" required>
+                    </div>
+                    <div>
+                        <legend for="telefone_contato">Endereço*</legend>
+                        <input type="phone" id="endereco" name="telefone_contato" pattern="[0-9]{10,11}" style="width: 172px;" required>
+                    </div>
+                    <div>
+                        <legend for="email">Estado*</legend>
+                        <input type="text" id="estado" name="email" required>
+                    </div>  
                 </div>
-                <div>
-                    <legend for="nome_profissional">Cidade*</legend>
-                    <input type="text" id="cidade" name="nome_profissional" required>
-                </div>
-                <div>
-                    <legend for="telefone_contato">Endereço*</legend>
-                    <input type="phone" id="endereco" name="telefone_contato" pattern="[0-9]{10,11}" style="width: 172px;" required>
-                </div>
-                <div>
-                    <legend for="email">Estado*</legend>
-                    <input type="text" id="estado" name="email" required>
-                </div>  
-            </div>
             
 
             <button type="submit">Cadastrar</button>
-        </form>
+            </form>
     
         
     </main>
