@@ -257,18 +257,32 @@ form {
 .first-form-content-size {
     background-color: #0E0E0E;
     margin-top: 20px;
-    padding: 0 40px;
-    height: 600px;
+    padding: 0 20px 50px 20px;
+    height: fit-content;
     border-radius: 20px;
 }
 
 .second-form-content-size {
-    margin-top: 20px 0 20px 0;
+    margin: 0  0 20px 0;
     background-color: #0E0E0E;
-    height: 495px;
-    padding: 0 40px;
+    height: fit-content;
+    padding: 0 20px 0 20px;
     border-radius: 20px;
 }
+
+.second-form-content-size .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    height: fit-content;
+    padding: 0;
+    justify-content: center;
+}
+
+.second-form-content-size .container div {
+    height: fit-content;
+}
+
 
 .main-form img {
     margin-left: auto;
@@ -282,24 +296,25 @@ form {
 }
 
 legend
- {
+{
     font-size: 16px;
     font-family: 'Inter-ExtraLight';
     margin: 5px 0;
 }
+
 .main-form input {
     color: #fff;
     height: 40px;
     background-color: #1C1E21;
-    width: 100%;
     border: 0;
     border-radius: 8px;
+    width: 100%;
 }
 
 .main-form button {
     width: 120px;
     height: 50px;
-    margin: 20px 0 20px auto;
+    margin: 20px 0 50px auto;
     --bs-btn-border-color: #fff;
     --bs-btn-hover-bg: rgba(190, 190, 190, 0.5);
     --bs-btn-hover-border-color: #ffffff;
