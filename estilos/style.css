@@ -256,7 +256,7 @@ form {
 
 .first-form-content-size {
     background-color: #0E0E0E;
-    margin-top: 20px;
+    margin-top: -25px;
     padding: 0 20px 50px 20px;
     height: fit-content;
     border-radius: 20px;
@@ -314,7 +314,7 @@ legend
 .main-form button {
     width: 120px;
     height: 50px;
-    margin: 20px 0 50px auto;
+    
     --bs-btn-border-color: #fff;
     --bs-btn-hover-bg: rgba(190, 190, 190, 0.5);
     --bs-btn-hover-border-color: #ffffff;
