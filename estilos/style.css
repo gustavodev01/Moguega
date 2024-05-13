@@ -93,8 +93,12 @@ body {
     height: 24px;
 }
 .logotipo img{
+    position: relative;
     height: 40px;
-
+}
+.a-logotipo {
+    position: relative;
+    top: 15px;
 }
 .banner {
     display: flex;
@@ -104,7 +108,8 @@ body {
     margin: -55px 0 0 0;
     padding: 0;
     width: 100vw;
-    height: 52vh;
+    height: 47vh;
+    padding-top: 55px;
     background-image: url(/imagens/banner-home.jpg);
     background-size: cover;
     background-position: center right;
@@ -153,7 +158,7 @@ body {
     display: inline-block;
     width: 150px;
     height: 40px;
-    margin-bottom: 10vh;
+    
     padding: 7px 15px;  
     border: solid 1px #fff;
     color: #fff;
@@ -204,8 +209,9 @@ body {
 .faixa-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100vw;
-    height: calc(100vh - 86vh);
+    height: calc(100vh - 81vh);
 }
 .faixa {
     display: flex;
@@ -213,16 +219,18 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100%;
+    height: 80%;
     background: linear-gradient(to right, #02151C, #003437);
 }
 .faixa h3 {
+    text-shadow: 0px 0px 5px#000;
     color: #fff;
     font-family: 'Inter-ExtraLight';
     font-size: 28px;
     margin: 0;
 }
 .faixa a {
+    text-shadow: 0px 0px 5px#000;   
     color: #029BE7;
     font-size: 25px;
     text-transform: uppercase;
