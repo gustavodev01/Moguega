@@ -12,18 +12,18 @@
 </head>
 
 <body>
-    <header>
+    <header class="home-header">
         <div id="nav">
             <nav>
                 <ul>
                     <li>
-                        <a href="#" class="icone-menu">
-                            <div class="icone-menu" style="width: 24px; height: 24px;">
+                        <a href="#">
+                            <div class="menu-icon" style="width: 24px; height: 24px; display: flex; flex-wrap: wrap; align-content: space-between;">
                                 <div class="top-bar"
                                     style="width: 24px; height: 4px; border-radius: 2px; background-color: #029BE7;">
                                 </div>
                                 <div class="mid-bar"
-                                    style="width: 24px; height: 4px; border-radius: 2px; margin: 4px 0 4px; background-color: #fff;">
+                                    style="width: 24px; height: 4px; border-radius: 2px; background-color: #fff;">
                                 </div>
                                 <div class="bot-bar"
                                     style="width: 24px; height: 4px; border-radius: 2px; background-color: #E70509;">
@@ -33,12 +33,14 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img id="logotipo" src="imagens/moguega.png" alt="Logotipo">
+                            <div class="logotipo container">
+                                <img id="logotipo" src="imagens/moguega.png" alt="Logotipo">
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="icone-usuario">
-                            <img id="icone-usuario" src="imagens/user-icon.png" alt="Ícone do usuário">
+                        <a href="#">
+                            <img id="user-icon" src="imagens/user-icon.png" alt="Ícone do usuário">
                         </a>
                     </li>
                 </ul>
@@ -46,37 +48,32 @@
 
         </div>
     </header>
-    <section class="background">
-        
-        <div id="slogan" class="container">
-            <section>
-                <h1>Mais agilidade...<span style="visibility: hidden;">.</span></h1>
-                <h2>no seu tempo!</h2>
-                <span>
-                    <a href="#">
-                        <button type="button" class="btn btn-outline-primary">Barbearias</button>
-                    </a>
-                </span>
-            </section>
-        </div>
-    </section>
-    
-    <main>
-        
-        <section class="degrade">
-            <div class="degrade-content">
-                <h3>Marque um <br>horário no <br><span>seu tempo</span> a <span>qualquer hora!</span></h3>
+
+    <div class="flex-container banner">
+        <div class="flex-container banner-content">
+            <div class="flex-container text-banner">
+                <h1>Mais agilidade...</h1>
+                <span><h2>no seu tempo!</h2></span>
             </div>
-            <img src="imagens/rect.png" alt="decoração" style="height: 120px; display: flex;">
-        </section>
-        <section class="faixa">
-            <div class="faixa-content">
-                <h4><em>Cadastre sua barbearia!</em></h4>
-                <a href="cadastrar_barbearias.html">cadastrar</a>
-            </div>    
-        </section>
-        
-    </main>
+        </div>
+        <div class="flex-container barbearias-link">
+            <a href="#">Barbearias</a>
+        </div>
+    </div>
+    <div class="flex-container outdoor">
+        <div class="outdoor-content">
+            <h2>Marque um<br> horário no<br> <span>seu tempo</span> a<br> <span>qualquer hora!</span></h2>
+        </div>
+        <div class="rect-content">
+            <img class="rect" src="imagens/rect.png" alt="decoracao">
+        </div>
+    </div>
+    <div class="flex-container faixa-content">
+        <div class="faixa">
+            <h3>Cadastre sua barbearia</h3>
+            <a href="cadastrar-barbearia.html">Cadastrar</a>
+        </div>
+    </div>
 
 </body>
 
