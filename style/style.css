@@ -237,24 +237,14 @@ h6 {
 .box-shadow {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
-
 .agenda {
-    background-color: #222222;
-    background-image: url(../imagens/agenda2_blur.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-color: wheat;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
-
 .agenda .agenda_title h2 {
-    text-shadow: 0 0 10px #000;
+    color: #000;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    padding: 20px 0 30px 0;
     font-size: 3rem;
 }
-
-.agenda .wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
