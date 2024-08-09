@@ -243,8 +243,32 @@ h6 {
     border-bottom-right-radius: 50%;
 }
 .agenda .agenda_title h2 {
-    color: #000;
+    color: #333333;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
     padding: 20px 0 30px 0;
     font-size: 3rem;
+}
+
+.equipe {
+    background-color: #fff;
+}
+
+.equipe .profissionais {
+    width: 100%;
+    padding: 0 0 100px 0;
+}
+
+.equipe .card {
+    border: 5px solid #313133;
+    border-radius: 0;
+}
+
+.equipe .card-image {
+    object-fit: cover;
+    width: 185px;
+    height: 185px;
+}
+
+.equipe .card-body {
+    padding: 45px 10px 15px 10px;
 }
