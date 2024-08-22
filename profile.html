@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,31 +21,103 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container p-0 d-flex justify-content-center position-relative">
-        <a href="index.html" class="logout-button"><i class="bi bi-x-lg"></i></a>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Teste</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <link rel="stylesheet" href="style/style.css">
+      <style>
 
-        <div class="profile_header">
-            <div class="profile_banner">
-                <img src="imagens/Capa-Barbearia-Junior-Dacroce.png"
-                    class="object-fit-cover w-100 h-100 rounded-3 rounded-top-0" alt="capa">
-            </div>
-            <div class="column pb-3 bg-dark">
-                <div class="profile_foto">
-                    <img src="imagens/Barbearia-Junior-Dacroce.jpg" class="barb_photo float-start rounded-circle"
-                        style="width: 100px; height: 100px;" alt="">
-                    <div class="espacamento"></div>
-                    <div class="profile">
-                        <h5>Barbearia <br>Junior Dacroce</h5>
-                    </div>
-                    <div class="profissionais" style="bottom: 55px; left: 50px;">
-                        <div class="container d-flex">
-                            <div class="barber_photo"><img src="imagens/dark-user-icon.jpg"
-                                    style="border-radius: 50%; width: 26px; height: 26px;"></div>
-
-                        </div>
+      </style>
+    </head>
+    
+    <body>
+    
+    
+        <section class="cover-image-section">
+            <header class="cover-hader-site">
+    
+                <img src="imagens/capa.jpg">
+    
+                <div class="cover-image-div">
+                    <div class="cover-image-edite-btn">
+                        <button type="button" class="btn btn-light">
+                            <i class="bi bi-pen"></i>
+                            Editar capa
+                        </button>
                     </div>
                 </div>
+    
+            </header>
+        </section>
+    
+        <section class="profile-section">
+            <div class="profile-section-in">
+    
+                <div class="profile-image-site">
+                    <div class="profile-image-div">
+                        <a href="#">
+                            <img id="Profile_images" src="imagens/Barbearia-Junior-Dacroce.jpg">
+                        </a>
+                        <span><i class="bi bi-pen m-0"></i></span>
+                    </div>
+                </div>
+    
+                <div class="profile-name-info">
+                    <h1 class="text-light">
+                        <span >Barbearia<br> Junior Dacroce</span>					
+                    </h1>
+    
+                    <div class="profissionais-header fs-3">
+    
+						<img class="Profile_images" src="imagens/barbeiro-foto.jpg">
+                        <p class="text-light"><span>Caio Moreira</span></p>
+    
+                    </div>
+    
+                </div>
             </div>
+    
+            <div class="profile-section-under">
+    
+                <div class="profile-button-site">
+                    <button type="button" class="btn btn-outline-primary">
+                        <i class="bi bi-plus"></i>
+                        Add to Storry
+                    </button>
+                </div>
+    
+                <div class="profile-button-site">
+                    <button type="button" class="btn btn-outline-light">
+                        <i class="bi bi-pen"></i>
+                        Editar Agenda
+                        </button>
+                </div>
+            </div>
+    
+            <div class="line"></div>
+    
+        </section>
+    
+    
+        <script type="text/javascript" src="js/castom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
 
             <div class="container p-0">
                 <nav class="nav nav-pills navtab flex-row">
