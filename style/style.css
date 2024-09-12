@@ -334,3 +334,54 @@ i {
 		align-items: stretch;
 	}
 }
+
+/*Feito por Gustavo Santana*/
+
+
+/* Estilo para o cabeçalho do offcanvas */
+.offcanvas-header h5 {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Adicionar linhas divisórias entre os itens do menu */
+.menu-item {
+    font-weight: bold; /* Deixar as opções em negrito */
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória */
+    color: #fff; /* Cor branca para o texto */
+}
+
+/* Remover linha do último item */
+.nav-item:last-child .menu-item {
+    border-bottom: none;
+}
+
+/* Efeito ao passar o mouse sobre os itens */
+.menu-item:hover {
+    color: #029be7; /* Cor azul no hover */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Estilo para o botão de pesquisa */
+form .btn {
+    border-radius: 50px;
+    background-color: #029be7;
+    border: none;
+}
+
+form .btn:hover {
+    background-color: #029be7;
+}
+
+/* Caixa de pesquisa */
+form .form-control {
+    border-radius: 20px;
+    border: 1px solid #029be7;
+    padding: 0.75rem;
+}
+
+form .form-control::placeholder {
+    color: #fff; /* Cor branca para o placeholder */
+    opacity: 1; /* Para garantir que a cor apareça totalmente */
+}
