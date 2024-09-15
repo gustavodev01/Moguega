@@ -336,8 +336,6 @@ i {
 }
 
 /*Feito por Gustavo Santana*/
-
-
 /* Estilo para o cabeçalho do offcanvas */
 .offcanvas-header h5 {
     font-weight: bold;
@@ -346,10 +344,10 @@ i {
 
 /* Adicionar linhas divisórias entre os itens do menu */
 .menu-item {
-    font-weight: bold; /* Deixar as opções em negrito */
+    font-weight: bold;
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória */
-    color: #fff; /* Cor branca para o texto */
+    color: #fff;
 }
 
 /* Remover linha do último item */
@@ -357,10 +355,9 @@ i {
     border-bottom: none;
 }
 
-/* Efeito ao passar o mouse sobre os itens */
 .menu-item:hover {
-    color: #029be7; /* Cor azul no hover */
-    text-decoration: none; /* Remove sublinhado */
+    color: #029be7;
+    text-decoration: none;
 }
 
 /* Estilo para o botão de pesquisa */
@@ -382,6 +379,6 @@ form .form-control {
 }
 
 form .form-control::placeholder {
-    color: #fff; /* Cor branca para o placeholder */
-    opacity: 1; /* Para garantir que a cor apareça totalmente */
+    color: #fff;
+    opacity: 1;
 }
