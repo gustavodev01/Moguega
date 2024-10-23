@@ -1,0 +1,47 @@
+/* Estilo do header */
+.main-header {
+  background-color: #333;
+  width: 100%;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  color: white;
+  background-color: transparent;
+  display: block;
+}
+
+.offcanvas-header {
+  background-color: #333;
+}
+
+.offcanvas-body {
+  background-color: #222;
+}
+
+.offcanvas-body .nav-link {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-body .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

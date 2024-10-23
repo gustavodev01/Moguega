@@ -1,0 +1,25 @@
+/* Estilo geral para a página */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--dark-theme);
+}
+
+.wrapper-conteudo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    background: url('../imagens/banner-home.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
