@@ -37,32 +37,125 @@ body {
 
 .texto-centralizado h1 {
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .texto-centralizado p {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .texto-centralizado a {
     margin: 5px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+}
+
+/* Estilo da barra de pesquisa */
+.barra-pesquisa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Ajusta o espaço entre o texto e a barra de pesquisa */
+}
+
+.barra-pesquisa {
+    width: 550px;
+    /* Ajuste para largura da barra de pesquisa */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    /* Borda arredondada à esquerda */
+    outline: none;
+    font-size: 1rem;
+    background-color: #333;
+    /* Fundo escuro */
+    color: #fff;
+    /* Cor do texto */
+    transition: box-shadow 0.3s ease;
+    height: 45px;
+    /* Define uma altura fixa */
+}
+
+.barra-pesquisa::placeholder {
+    color: #bbb;
+    /* Cor do placeholder */
+}
+
+.botao-pesquisa {
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    /* Mesma cor da barra de pesquisa */
+    color: white;
+    border-radius: 0 50px 50px 0;
+    /* Borda arredondada à direita */
+    cursor: pointer;
+    height: 45px;
+    /* Define a mesma altura que a barra de pesquisa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.botao-pesquisa:hover {
+    background-color: #555;
+    /* Escurece um pouco o botão ao passar o mouse */
+}
+
+.botao-pesquisa i {
+    font-size: 1.2rem;
+    /* Tamanho da lupa */
+}
+
+.barra-pesquisa:focus {
+    box-shadow: 0 0 5px 2px rgba(44, 110, 213, 0.5);
+    /* Efeito de foco */
+}
+
+.barra-pesquisa:focus,
+.botao-pesquisa:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    box-shadow: none;
+    /* Remove o efeito de sombra se ele estiver causando o contorno */
 }
 
 /*media queries*/
 @media (max-width: 768px) {
+    .barra-pesquisa {
+        width: 100%;
+        /* Faz a barra de pesquisa ocupar toda a largura possível */
+    }
+
+    .barra-pesquisa-container {
+        flex-direction: column;
+        /* Empilha a barra e o botão no mobile */
+        align-items: stretch;
+    }
+
+    .botao-pesquisa {
+        width: 100%;
+        /* Botão ocupa toda a largura no mobile */
+        border-radius: 0 0 50px 50px;
+        /* Mantém as bordas arredondadas */
+    }
+
     /* Ajustes de posicionamento do texto */
     .texto-centralizado {
-        top: 25%; /* Ajusta a posição do texto para telas menores */
+        top: 25%;
+        /* Ajusta a posição do texto para telas menores */
         transform: translate(-50%, -25%);
     }
 
     .texto-centralizado h1 {
-        font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+        font-size: 2rem;
+        /* Reduz o tamanho da fonte do título */
     }
 
     .texto-centralizado p {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte da legenda */
+        font-size: 1rem;
+        /* Reduz o tamanho da fonte da legenda */
     }
 }
 
@@ -73,7 +166,7 @@ body {
     }
 
     .texto-centralizado h1 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .texto-centralizado p {
