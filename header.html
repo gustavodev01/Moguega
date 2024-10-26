@@ -13,8 +13,13 @@
           <span>Barbearia</span>
         </a>
       </div>
-      <!--botão entre ou cadastre-se-->
-      <button class="btn btn-outline-light ms-auto" onclick="handleLoginSignup()">Entre ou Cadastre-se</button>
+      <div class="dropdown ms-auto">
+        <img src="imagens/user-default.png" alt="Ícone de Usuário" class="user-icon dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <ul class="dropdown-menu dropdown-menu-end bg-dark text-light" aria-labelledby="userDropdown">
+          <li><a class="dropdown-item text-white" href="#">Entre</a></li>
+          <li><a class="dropdown-item text-white" href="#">Cadastre-se</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 

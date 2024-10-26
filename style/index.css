@@ -1,5 +1,6 @@
 /* Estilo geral para a página */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -22,4 +23,70 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+}
+
+.texto-centralizado {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.texto-centralizado h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.texto-centralizado p {
+    font-size: 1rem;
+}
+
+.texto-centralizado a {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+/*media queries*/
+@media (max-width: 768px) {
+    /* Ajustes para o botão "Entre ou Cadastre-se" no header */
+    .btn-outline-light {
+        display: none; /* Oculta o botão em telas menores */
+    }
+
+    /* Ajustes de posicionamento do texto */
+    .texto-centralizado {
+        top: 25%; /* Ajusta a posição do texto para telas menores */
+        transform: translate(-50%, -25%);
+    }
+
+    .texto-centralizado h1 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .texto-centralizado p {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte da legenda */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .btn-outline-light {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .texto-centralizado {
+        top: 20%;
+        transform: translate(-50%, -20%);
+    }
+
+    .texto-centralizado h1 {
+        font-size: 1.8rem;
+    }
+
+    .texto-centralizado p {
+        font-size: 1rem;
+    }
 }

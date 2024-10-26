@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+  incluirHeader();
+  incluirFooter();
+});
+
 function incluirHeader() {
   fetch('header.html')
     .then(response => response.text())
@@ -7,4 +12,11 @@ function incluirHeader() {
     .catch(error => console.error('Erro ao carregar o header:', error));
 }
 
-incluirHeader();
+function incluirFooter() {
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Erro ao carregar o footer:', error));
+}
