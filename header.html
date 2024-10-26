@@ -1,21 +1,24 @@
 <header class="main-header">
   <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid d-flex align-items-center justify-content-start">
-      <!-- Ícone de Offcanvas à esquerda -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-        aria-controls="offcanvasMenu" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span> <!-- Ícone padrão do Bootstrap (três linhas) -->
-      </button>
-
-      <!-- Logo e Nome Barbearia -->
-      <a class="navbar-brand d-flex align-items-center ms-2" href="#">
-        <img src="imagens/logos/barber-logo.png" alt="Logo da Barbearia" class="logo me-2">
-        <span>Barbearia</span>
-      </a>
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <!--icone do offcanvas-->
+      <div class="d-flex align-items-center">
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--logo e nome-->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="imagens/logos/barber-logo.png" alt="Logo da Barbearia" class="logo me-2">
+          <span>Barbearia</span>
+        </a>
+      </div>
+      <!--botão entre ou cadastre-se-->
+      <button class="btn btn-outline-light ms-auto" onclick="handleLoginSignup()">Entre ou Cadastre-se</button>
     </div>
   </nav>
 
-  <!-- Offcanvas Menu -->
+  <!--offcanvas menu-->
   <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title text-white" id="offcanvasMenuLabel">Menu de Opções</h5>

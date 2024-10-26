@@ -26,9 +26,44 @@
   border: none;
   color: white;
   background-color: transparent;
-  display: block;
 }
 
+.btn-outline-light {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  background: linear-gradient(135deg, #444, #2c6ed5); /* Gradiente de cinza para azul */
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: linear-gradient(135deg, #2c6ed5, #444); /* Gradiente invertido no hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.btn-outline-light:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(44, 110, 213, 0.5);
+}
+
+/* Ajustes de alinhamento */
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo do Offcanvas */
 .offcanvas-header {
   background-color: #333;
 }
