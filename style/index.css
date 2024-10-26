@@ -51,11 +51,6 @@ body {
 
 /*media queries*/
 @media (max-width: 768px) {
-    /* Ajustes para o botão "Entre ou Cadastre-se" no header */
-    .btn-outline-light {
-        display: none; /* Oculta o botão em telas menores */
-    }
-
     /* Ajustes de posicionamento do texto */
     .texto-centralizado {
         top: 25%; /* Ajusta a posição do texto para telas menores */
@@ -72,11 +67,6 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .btn-outline-light {
-        font-size: 0.85rem;
-        padding: 0.4rem 1rem;
-    }
-
     .texto-centralizado {
         top: 20%;
         transform: translate(-50%, -20%);
