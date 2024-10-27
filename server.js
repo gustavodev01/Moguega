@@ -1,6 +1,6 @@
 const express = require('express');
-const { Pool } = require('pg'); // Reutilizando a configuração do PostgreSQL
-const pool = require('./db'); // Arquivo db.js para o pool de conexão
+const { Pool } = require('pg'); //reutilizo a configuração do PostgreSQL
+const pool = require('./db'); //arquivo db.js para o pool de conexão
 
 const app = express();
 const port = 8080;
@@ -29,6 +29,11 @@ app.get('/api/test', async (req, res) => {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
   });
+
+  //rota para acessar a página de cadastro de cliente
+app.get('/cadastro/cliente', (req, res) => {
+  res.sendFile(path.join(__dirname, 'cadastro/Cliente/cadastroCliente.html'));
+});
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
