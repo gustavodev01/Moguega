@@ -46,6 +46,21 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(44, 110, 213, 0.5);
 }
 
+.form-container {
+    border: none;
+    /* Remova a borda */
+    border-radius: 8px;
+    /* Deixe um leve arredondamento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adicione uma sombra para destacar */
+    background-color: #333;
+    /* Fundo um pouco mais escuro */
+    padding: 30px;
+    /* Espaçamento interno para deixar mais espaçoso */
+    color: white;
+    /* Para o texto do título e de possíveis legendas */
+}
+
 /*animação para entrada do formulário */
 @keyframes fadeSlideIn {
     0% {
@@ -59,7 +74,6 @@ body {
     }
 }
 
-/*aplicar a animação ao container do formulário */
 #form-container {
     max-width: 600px;
     background-color: #333;

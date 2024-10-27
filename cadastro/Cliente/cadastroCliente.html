@@ -11,23 +11,44 @@
     <script src="../../js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="bg-dark h-100">
-    <div id="form-container" class="container my-5">
-        <h1 class="text-center text-light">Cadastro de Cliente</h1>
-        <form class="form-cadastro">
+<body class="bg-dark h-100 text-light">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 text-light">Cadastro de Cliente</h2>
+        <form>
             <div class="mb-3">
-                <label for="nome" class="form-label text-light">Nome Completo</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo">
+                <label for="primeiroNome" class="form-label text-light">Primeiro Nome</label>
+                <input type="text" class="form-control bg-dark text-light" id="primeiroNome" placeholder="Ex: João">
+            </div>
+            <div class="mb-3">
+                <label for="sobrenome" class="form-label text-light">Sobrenome</label>
+                <input type="text" class="form-control bg-dark text-light" id="sobrenome" placeholder="Moreira Santana">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label text-light">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                <input type="email" class="form-control bg-dark text-light" id="email"
+                    placeholder="Ex: joãoMoreira@hotmail.com">
             </div>
             <div class="mb-3">
-                <label for="telefone" class="form-label text-light">Telefone</label>
-                <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX">
+                <label for="sexo" class="form-label text-light">Sexo</label>
+                <select class="form-select bg-dark text-light" id="sexo">
+                    <option selected>Selecione...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+            <div class="mb-3">
+                <label for="celular" class="form-label text-light">Celular</label>
+                <input type="tel" class="form-control bg-dark text-light" id="celular"
+                    placeholder="Ex: +55 11 91234-5678">
+            </div>
+            <div class="form-check form-switch d-flex align-items-center">
+                <input class="form-check-input me-2" type="checkbox" id="receberNovidades">
+                <label class="form-check-label text-light" for="receberNovidades">Receber novidades?</label>
+            </div>
+            <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
         </form>
     </div>
 </body>
