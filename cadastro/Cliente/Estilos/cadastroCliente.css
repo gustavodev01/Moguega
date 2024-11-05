@@ -1,71 +1,144 @@
-/*Config de estilos padrão para pagina*/
 body {
-    background-color: #181818;
-    color: #fff;
-    font-family: sans-serif;
+    background-color: #121212;
 }
 
-#form-container {
-    max-width: 600px;
-    background-color: #222;
-    padding: 2rem;
+.card {
+    max-width: 400px;
+    margin: auto;
+    border: none;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    animation: fadeSlideIn 1s ease-out;
+    background-color: #1f1f1f !important;
 }
 
-.form-label {
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.btn-custom {
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+/* Botão Voltar - Cor Amarela */
+#backBtn, #backBtn2 {
+    background-color: #f0ad4e; /* Cor amarela */
+}
+
+#backBtn:hover, #backBtn:hover {
+    background-color: #ec9a1f; /* Tom mais escuro de amarelo no hover */
+}
+
+/* Botão Finalizar - Cor Verde */
+#finishBtn {
+    background-color: #5cb85c; /* Cor verde */
+}
+
+#finishBtn:hover {
+    background-color: #4cae4c; /* Tom mais escuro de verde no hover */
+}
+
+/* Botão Avançar - Cor Azul */
+#nextBtn, #nextBtn2 {
+    background-color: #0275d8; /* Cor azul */
+}
+
+#nextBtn:hover, #nextBtn2:hover {
+    background-color: #025aa5; /* Tom mais escuro de azul no hover */
+}
+
+.btn-custom i {
+    font-size: 1.2em;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    background-color: #2d2d2d; /* Cor mais suave para os campos */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, select {
     color: #bbb;
 }
 
-.form-control,
-.form-select {
-    background-color: #333;
+select {
+    background-color: #2d2d2d !important; /* Cor suave */
+    color: #fff !important; /* Texto branco */
+    appearance: none;
+    padding: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+    background-color: #2d2d2d;
     color: #fff;
-    border: 1px solid #555;
-    transition: border-color 0.3s;
+    outline: 2px solid #6200ea;
+    box-shadow: none;
 }
 
-.form-control::placeholder {
-    color: #888;
+input[type="password"], input[type="text"], input[type="email"], input[type="tel"], select {
+    background-color: #2d2d2d !important;
+    color: #fff;
 }
 
-.form-control:focus,
-.form-select:focus {
-    background-color: #444;
-    border-color: #2c6ed5;
-    box-shadow: 0 0 0 0.2rem rgba(44, 110, 213, 0.25);
+input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+    background-color: #2d2d2d !important; /* Mantém o fundo preto suave */
+    color: #fff !important; /* Mantém o texto branco no foco */
+    outline: 2px solid #6200ea;
+    box-shadow: none;
 }
 
-.btn-primary {
-    background-color: #2c6ed5;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.form-label {
+    color: #e0e0e0;
 }
 
-.btn-primary:hover {
-    background-color: #1f5bb5;
-    transform: translateY(-2px);
+.card h2 {
+    color: #e0e0e0;
 }
 
-.btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(44, 110, 213, 0.5);
+/* Ajuste do toggle switch e alinhamento do texto */
+.form-check.form-switch {
+    display: flex;
+    align-items: center;
 }
 
 .form-check-input {
-    transform: scale(1.2);
-    accent-color: #2c6ed5;
+    margin-right: 0.5rem;
 }
 
-@keyframes fadeSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.form-check-label {
+    color: #e0e0e0;
 }
 
+.zoom-in-fade {
+    animation: zoomInFade 0.5s ease forwards;
+}
 
+@keyframes zoomInFade {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Animação de saída com zoom out e fade */
+.zoom-out-fade {
+    animation: zoomOutFade 0.5s ease forwards;
+}
+
+@keyframes zoomOutFade {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.8); }
+}
