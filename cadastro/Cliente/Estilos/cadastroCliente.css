@@ -1,34 +1,40 @@
 /*Config de estilos padrão para pagina*/
 body {
-    font-family: 'Oswald', sans-serif;
-}
-
-.container {
-    max-width: 600px;
-    background-color: #333;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-cadastro {
-    background: transparent;
-}
-
-.form-control {
-    background-color: #444;
+    background-color: #181818;
     color: #fff;
-    border: 1px solid #555;
+    font-family: sans-serif;
 }
 
-.form-control::placeholder {
+#form-container {
+    max-width: 600px;
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    animation: fadeSlideIn 1s ease-out;
+}
+
+.form-label {
     color: #bbb;
 }
 
-.form-control:focus {
-    background-color: #555;
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+.form-control,
+.form-select {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    transition: border-color 0.3s;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #444;
+    border-color: #2c6ed5;
+    box-shadow: 0 0 0 0.2rem rgba(44, 110, 213, 0.25);
 }
 
 .btn-primary {
@@ -46,39 +52,20 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(44, 110, 213, 0.5);
 }
 
-.form-container {
-    border: none;
-    /* Remova a borda */
-    border-radius: 8px;
-    /* Deixe um leve arredondamento */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Adicione uma sombra para destacar */
-    background-color: #333;
-    /* Fundo um pouco mais escuro */
-    padding: 30px;
-    /* Espaçamento interno para deixar mais espaçoso */
-    color: white;
-    /* Para o texto do título e de possíveis legendas */
+.form-check-input {
+    transform: scale(1.2);
+    accent-color: #2c6ed5;
 }
 
-/*animação para entrada do formulário */
 @keyframes fadeSlideIn {
     0% {
         opacity: 0;
         transform: translateY(50px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-#form-container {
-    max-width: 600px;
-    background-color: #333;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeSlideIn 1s ease-out;
-}
+
