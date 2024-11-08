@@ -15,27 +15,33 @@
 
 <body class="bg-dark text-light">
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="card p-4">
+            <!-- Botão de Voltar dentro do Card -->
+            <button class="back-button" onclick="window.location.href='/'">
+                <i class="bi bi-arrow-left-circle"></i>
+            </button>
+            
             <h2 class="text-center mb-4">Cadastro de Cliente</h2>
+            
             <form id="registrationForm">
                 <!-- Etapa 1: Informações Básicas -->
                 <div class="form-step active" id="step-1">
                     <div class="mb-3">
-                        <label for="firstName" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="firstName" required>
+                        <label for="txtPrimeiroNome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="txtPrimeiroNome" required>
                     </div>
                     <div class="mb-3">
-                        <label for="lastName" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="lastName" required>
+                        <label for="txtSobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="txtSobrenome" required>
                     </div>
                     <div class="mb-3">
-                        <label for="gender" class="form-label">Sexo</label>
-                        <select class="form-select" id="gender" required>
+                        <label for="cmbSexo" class="form-label">Sexo</label>
+                        <select class="form-select" id="cmbSexo" required>
                             <option value="">Selecione</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                            <option value="outro">Outro</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Outro">Outro</option>
                         </select>
                     </div>
                     <br>
@@ -47,16 +53,16 @@
                 <!-- Etapa 2: Contato e Preferências -->
                 <div class="form-step" id="step-2">
                     <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <label for="txtEmail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="txtEmail" required>
                     </div>
                     <div class="mb-3">
-                        <label for="cellphone" class="form-label">Celular</label>
-                        <input type="tel" class="form-control" id="cellphone" required>
+                        <label for="txtCelular" class="form-label">Celular</label>
+                        <input type="tel" class="form-control" id="txtCelular" required>
                     </div>
                     <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" id="receiveUpdates">
-                        <label class="form-check-label" for="receiveUpdates">Receber novidades</label>
+                        <input class="form-check-input" type="checkbox" id="txtRecebeUpdate">
+                        <label class="form-check-label" for="txtRecebeUpdate">Receber novidades</label>
                     </div>
                     <div class="d-flex justify-content-between">
                         <button type="button" class="btn btn-custom" id="backBtn">
@@ -71,12 +77,12 @@
                 <!-- Etapa 3: Senha -->
                 <div class="form-step" id="step-3">
                     <div class="mb-3">
-                        <label for="password" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="password" required>
+                        <label for="txtSenha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="txtSenha" required>
                     </div>
                     <div class="mb-3">
-                        <label for="confirmPassword" class="form-label">Confirmar Senha</label>
-                        <input type="password" class="form-control" id="confirmPassword" required>
+                        <label for="txtConfirmaSenha" class="form-label">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="txtConfirmaSenha" required>
                     </div>
                     <div class="d-flex justify-content-between">
                         <button type="button" class="btn btn-custom" id="backBtn2">
@@ -90,6 +96,7 @@
             </form>
         </div>
     </div>
+
     <script src="../../javascript/cadastroCliente/cadastroCliente.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>

@@ -1,15 +1,42 @@
-body {
+/* Estilos para centralizar o conteúdo */
+body, html {
     background-color: #121212;
+    height: 100vh; /* Garante que o fundo cubra 100% da altura da tela */
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
+/* Estilo do card do formulário */
 .card {
     max-width: 400px;
     margin: auto;
     border: none;
     border-radius: 12px;
     background-color: #1f1f1f !important;
+    padding: 20px;
+    position: relative;
 }
 
+/* Estilo para o botão de voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #ccc;
+}
+
+/* Outros estilos */
 .form-step {
     display: none;
 }
@@ -33,72 +60,68 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Botão Voltar - Cor Amarela */
 #backBtn, #backBtn2 {
-    background-color: #f0ad4e; /* Cor amarela */
+    background-color: #f0ad4e;
 }
 
-#backBtn:hover, #backBtn:hover {
-    background-color: #ec9a1f; /* Tom mais escuro de amarelo no hover */
+#backBtn:hover, #backBtn2:hover {
+    background-color: #ec9a1f;
 }
 
-/* Botão Finalizar - Cor Verde */
 #finishBtn {
-    background-color: #5cb85c; /* Cor verde */
+    background-color: #5cb85c;
 }
 
 #finishBtn:hover {
-    background-color: #4cae4c; /* Tom mais escuro de verde no hover */
+    background-color: #4cae4c;
 }
 
-/* Botão Avançar - Cor Azul */
 #nextBtn, #nextBtn2 {
-    background-color: #0275d8; /* Cor azul */
+    background-color: #0275d8;
 }
 
 #nextBtn:hover, #nextBtn2:hover {
-    background-color: #025aa5; /* Tom mais escuro de azul no hover */
+    background-color: #025aa5;
 }
 
 .btn-custom i {
     font-size: 1.2em;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], select {
-    background-color: #2d2d2d; /* Cor mais suave para os campos */
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
+    background-color: #2d2d2d;
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 10px;
 }
 
-input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, select {
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, input[type="password"]::placeholder, select {
     color: #bbb;
 }
 
 select {
-    background-color: #2d2d2d !important; /* Cor suave */
-    color: #fff !important; /* Texto branco */
-    appearance: none;
+    background-color: #2d2d2d !important;
+    color: #fff !important;
+    border: 1px solid transparent;
+    border-radius: 8px;
     padding: 10px;
+    appearance: none;
+    outline: none;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
-    background-color: #2d2d2d;
-    color: #fff;
-    outline: 2px solid #6200ea;
+select:focus {
+    background-color: #2d2d2d !important;
+    color: #fff !important;
+    border: 1px solid #0d6efd;
+    outline: none;
     box-shadow: none;
 }
 
-input[type="password"], input[type="text"], input[type="email"], input[type="tel"], select {
-    background-color: #2d2d2d !important;
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, input[type="password"]:focus {
+    background-color: #2d2d2d;
     color: #fff;
-}
-
-input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
-    background-color: #2d2d2d !important; /* Mantém o fundo preto suave */
-    color: #fff !important; /* Mantém o texto branco no foco */
-    outline: 2px solid #6200ea;
+    outline: 2px solid #0d6efd;
     box-shadow: none;
 }
 
@@ -108,9 +131,9 @@ input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focu
 
 .card h2 {
     color: #e0e0e0;
+    padding-left: 40px;
 }
 
-/* Ajuste do toggle switch e alinhamento do texto */
 .form-check.form-switch {
     display: flex;
     align-items: center;
@@ -122,23 +145,4 @@ input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focu
 
 .form-check-label {
     color: #e0e0e0;
-}
-
-.zoom-in-fade {
-    animation: zoomInFade 0.5s ease forwards;
-}
-
-@keyframes zoomInFade {
-    from { opacity: 0; transform: scale(0.8); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-/* Animação de saída com zoom out e fade */
-.zoom-out-fade {
-    animation: zoomOutFade 0.5s ease forwards;
-}
-
-@keyframes zoomOutFade {
-    from { opacity: 1; transform: scale(1); }
-    to { opacity: 0; transform: scale(0.8); }
 }
