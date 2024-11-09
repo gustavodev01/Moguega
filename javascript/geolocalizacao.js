@@ -1,10 +1,10 @@
 console.log("Arquivo geolocalizacao.js carregado");
 
-// Verifica se o navegador suporta geolocalização
-function obterLocalizacaoUsuario() {
+// Função para obter a localização do usuário quando solicitado
+function getUserLocation() {
     if ("geolocation" in navigator) {
         console.log("Geolocalização disponível no navegador.");
-        
+
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 const latitude = position.coords.latitude;
@@ -12,6 +12,10 @@ function obterLocalizacaoUsuario() {
 
                 console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
 
+                // Converte latitude e longitude para endereço
+                obterEndereco(latitude, longitude);
+                
+                // Envia a localização para o servidor (opcional)
                 enviarLocalizacaoParaServidor(latitude, longitude);
             },
             (error) => {
@@ -37,6 +41,26 @@ function obterLocalizacaoUsuario() {
     }
 }
 
+// Função para converter coordenadas em endereço usando OpenStreetMap
+function obterEndereco(latitude, longitude) {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.display_name) {
+                document.getElementById("inputLocalizacao").value = data.display_name;
+            } else {
+                document.getElementById("inputLocalizacao").value = "Endereço não encontrado";
+            }
+        })
+        .catch(error => {
+            console.error("Erro ao obter endereço:", error);
+            document.getElementById("inputLocalizacao").value = "Erro ao obter endereço";
+        });
+}
+
+// Função para enviar a localização ao servidor
 function enviarLocalizacaoParaServidor(latitude, longitude) {
     console.log("Enviando localização para o servidor...");
 
@@ -55,5 +79,3 @@ function enviarLocalizacaoParaServidor(latitude, longitude) {
         console.error("Erro ao enviar localização:", error);
     });
 }
-
-document.addEventListener("DOMContentLoaded", obterLocalizacaoUsuario);

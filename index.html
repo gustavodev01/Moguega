@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/header.css">
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="javascript/index/index.js"></script>
-  <script src="javascript/geolocalizacao.js"></script>
 </head>
 
 <body class="bg-dark h-100">
@@ -20,19 +17,51 @@
   <!-- Conteúdo principal -->
   <div class="wrapper-conteudo">
     <div class="background-image">
-      <div class="texto-centralizado">
-        <h1 class="display-4">Bem-vindo à Moguega Barbearia</h1>
-        <p class="lead">Oferecendo o melhor serviço para você se sentir renovado!</p>
-        <div class="barra-pesquisa-container">
-          <input type="text" class="barra-pesquisa" placeholder="Pesquisar Barbearias">
-          <button class="botao-pesquisa">
-            <i class="bi bi-search"></i>
-          </button>
+      <div class="localizacao-container">
+        <h2>Encontre a barbearia mais próxima</h2>
+        <p>Informe sua localização para encontrar as melhores opções de barbearias próximas de você.</p>
+        <div class="localizacao-busca">
+          <input type="text" class="localizacao-input" placeholder="Em qual endereço você está no momento?"
+            id="abrirModal">
+          <button class="localizacao-botao">Ver barbearias próximas</button>
         </div>
       </div>
     </div>
   </div>
 
+  <!--Modal-->
+  <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-light custom-modal-content">
+        <div class="modal-header border-0 d-flex flex-column align-items-center">
+          <img src="imagens/logos/mapa-icone.png" alt="Ícone de Localização" class="modal-icon mb-3">
+          <h5 class="modal-title" id="locationModalLabel">Busque a barbearia mais próxima</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="locationForm">
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-secondary border-0 text-light">
+                <i class="bi bi-geo-alt"></i>
+              </span>
+              <input type="text" class="form-control bg-secondary text-light" id="inputLocalizacao"
+                placeholder="Buscar endereço e número">
+            </div>
+            <button type="button" class="btn btn-primary w-100 mb-3" onclick="getUserLocation()">Usar minha
+              localização</button>
+          </form>
+        </div>
+        <div class="modal-footer border-0 d-flex justify-content-center">
+          <p class="text-muted">Já tem um endereço salvo? <a href="#" class="text-primary">Entre ou cadastre-se</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="javascript/index/index.js"></script>
+  <script src="javascript/geolocalizacao.js"></script>
 </body>
 
 </html>

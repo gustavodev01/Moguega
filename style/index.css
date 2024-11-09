@@ -119,70 +119,156 @@ body {
     box-shadow: none;
 }
 
-@media (max-width: 768px) {
-    .background-image {
-        height: auto;
-        min-height: 100vh;
-        background-position: top center;
-    }
-
-    .texto-centralizado {
-        top: 25%;
-        transform: translate(-50%, -25%);
-    }
-
-    .texto-centralizado h1 {
-        font-size: 2rem;
-    }
-
-    .texto-centralizado p {
-        font-size: 1rem;
-    }
-
-    .barra-pesquisa {
-        width: 250%;
-        border-radius: 50px;
-        margin-bottom: 10px;
-    }
-
-    .botao-pesquisa {
-        width: 50px;
-        border-radius: 50px;
-        margin-left: 10px;
-    }
-
-    .barra-pesquisa-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+.localizacao-container {
+    text-align: center;
+    margin-top: 300px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .background-image {
-        height: auto;
-        min-height: 100vh;
-    }
+.localizacao-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
 
-    .texto-centralizado {
-        top: 20%;
-        transform: translate(-50%, -20%);
-    }
+.localizacao-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
-    .texto-centralizado h1 {
-        font-size: 2.5rem;
-    }
+.localizacao-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
-    .texto-centralizado p {
-        font-size: 1.2rem;
-    }
+.localizacao-input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+}
 
-    .barra-pesquisa {
-        width: 80%;
-        border-radius: 25px;
-    }
+.localizacao-botao {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dc3545;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    .botao-pesquisa {
-        padding: 10px;
-    }
+.localizacao-botao:hover {
+    background-color: #c82333;
+}
+
+/* Modal Dark Mode */
+.modal-content {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.modal-body .form-label {
+    color: #e0e0e0;
+}
+
+.form-control.bg-secondary {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+}
+
+.form-control.bg-secondary::placeholder {
+    color: #bbbbbb;
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
+
+/* Estilo para o conteúdo do modal */
+.custom-modal-content {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Ícone no topo do modal */
+.modal-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo para os elementos dentro do modal */
+#locationModal .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#locationModal .modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+#locationModal .input-group-text {
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+#locationModal .form-control {
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+
+#locationModal .btn-primary {
+    background-color: #ff5722; /* cor personalizada do botão */
+    border-color: #ff5722;
+    font-weight: bold;
+}
+
+#locationModal .btn-primary:hover {
+    background-color: #e64a19;
+    border-color: #e64a19;
+}
+
+#locationModal .modal-footer a {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* Estilo para centralizar o link no modal */
+#locationModal .modal-footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Ajuste opcional para o botão de localização */
+#locationModal .btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+    font-weight: bold;
+}
+
+#locationModal .btn-primary:hover {
+    background-color: #e64a19;
+    border-color: #e64a19;
+}
+
+#locationModal .modal-footer a {
+    color: #ff5722;
+    font-weight: bold;
 }
