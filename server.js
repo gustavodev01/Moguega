@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname)));
 app.use(express.static(path.join(__dirname, 'style')));
 app.use(express.static(path.join(__dirname, 'javascript')));
 app.use(express.static(path.join(__dirname, 'imagens')));
+app.use(express.static(path.join(__dirname, 'login')));
 
 
 //////////////////////////////////////////////////////
@@ -34,6 +35,11 @@ app.get('/api/test', async (req, res) => {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
   });
+
+// Rota para a página de login
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, 'login/login.html'));
+});
 
   //rota para acessar a página de cadastro de cliente
 app.get('/cadastro/cliente', (req, res) => {

@@ -1,0 +1,94 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-card {
+    background-color: #1f1f1f;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    /* Aumente o tamanho do card */
+}
+
+.login-icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.login-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    font-size: 16px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.btn-facebook {
+    background-color: #1877f2;
+    border-color: #1877f2;
+}
+
+.btn-facebook:hover {
+    background-color: #145dbd;
+    border-color: #145dbd;
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: 1px solid #4285f4;
+
+    color: #4285f4;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-google::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('imagens/icons/google-icon.png');
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.btn-outline-primary {
+    color: #4285f4;
+    border-color: #4285f4;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4285f4;
+    color: #ffffff;
+}
+
+.btn-outline-secondary {
+    color: #ffffff;
+    border-color: #666666;
+    width: 45%;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #666666;
+}
