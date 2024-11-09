@@ -1,93 +1,65 @@
-/* Estilo do header */
+/* Estilo do Header */
 .main-header {
-  background-color: #333;
-  width: 100%;
+  background-color: #121212;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
-  padding: 0.5rem 1rem;
+  height: 80px; /* Aumenta a altura do header */
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem; /* Aumenta o tamanho do texto da marca */
 }
 
-.navbar-brand img {
-  height: 40px;
-  width: auto;
-  margin-right: 10px;
+.logo {
+  height: 40px; /* Ajusta o tamanho do logo */
 }
 
-.navbar-toggler {
-  border: none;
-  color: white;
-  background-color: transparent;
+/* Estilos para os botões Entrar e Cadastrar */
+.nav-link {
+  font-weight: bold;
+  color: #fff !important;
+  margin-right: 15px;
 }
 
-/* Ajustes de alinhamento */
-.container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.nav-link:hover {
+  color: #f0ad4e !important;
+  text-decoration: underline;
 }
 
-.d-flex.align-items-center {
-  display: flex;
-  align-items: center;
+.btn.btn-danger {
+  background-color: #ff3d3d;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 20px;
 }
 
-/* Estilo do Offcanvas */
-.offcanvas-header {
-  background-color: #333;
+.btn.btn-danger:hover {
+  background-color: #ff4d4d;
+  color: #fff;
 }
 
-.offcanvas-body {
-  background-color: #222;
-}
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px 15px;
+  }
 
-.offcanvas-body .nav-link {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  .logo {
+    height: 30px;
+  }
 
-.offcanvas-body .nav-link:hover {
-  background-color: #2c6ed5; /* Azul que combina com o site */
-  color: white;
-}
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
 
-.offcanvas-body .nav-link i {
-  color: #bbb;
-  transition: color 0.3s ease;
-}
+  .nav-link {
+    font-size: 0.9rem;
+  }
 
-.offcanvas-body .nav-link:hover i {
-  color: white;
-}
-
-/* Estilo do ícone de usuário */
-.user-icon {
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-.dropdown-menu {
-  background-color: #333; /* Cor de fundo da dropdown */
-  border: none; /* Remove a borda */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-menu .dropdown-item {
-  padding: 10px 20px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1rem;
-}
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Estilo no hover */
+  .btn.btn-danger {
+    padding: 5px 15px;
+  }
 }

@@ -116,50 +116,54 @@ body {
 .barra-pesquisa:focus,
 .botao-pesquisa:focus {
     outline: none;
-    /* Remove o contorno padrão */
     box-shadow: none;
-    /* Remove o efeito de sombra se ele estiver causando o contorno */
 }
 
-/*media queries*/
 @media (max-width: 768px) {
-    .barra-pesquisa {
-        width: 100%;
-        /* Faz a barra de pesquisa ocupar toda a largura possível */
+    .background-image {
+        height: auto;
+        min-height: 100vh;
+        background-position: top center;
     }
 
-    .barra-pesquisa-container {
-        flex-direction: column;
-        /* Empilha a barra e o botão no mobile */
-        align-items: stretch;
-    }
-
-    .botao-pesquisa {
-        width: 100%;
-        /* Botão ocupa toda a largura no mobile */
-        border-radius: 0 0 50px 50px;
-        /* Mantém as bordas arredondadas */
-    }
-
-    /* Ajustes de posicionamento do texto */
     .texto-centralizado {
         top: 25%;
-        /* Ajusta a posição do texto para telas menores */
         transform: translate(-50%, -25%);
     }
 
     .texto-centralizado h1 {
         font-size: 2rem;
-        /* Reduz o tamanho da fonte do título */
     }
 
     .texto-centralizado p {
         font-size: 1rem;
-        /* Reduz o tamanho da fonte da legenda */
+    }
+
+    .barra-pesquisa {
+        width: 250%;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .botao-pesquisa {
+        width: 50px;
+        border-radius: 50px;
+        margin-left: 10px;
+    }
+
+    .barra-pesquisa-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    .background-image {
+        height: auto;
+        min-height: 100vh;
+    }
+
     .texto-centralizado {
         top: 20%;
         transform: translate(-50%, -20%);
@@ -170,6 +174,15 @@ body {
     }
 
     .texto-centralizado p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .barra-pesquisa {
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    .botao-pesquisa {
+        padding: 10px;
     }
 }

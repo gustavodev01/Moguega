@@ -9,7 +9,11 @@ const path = require('path');
 
 // Middleware para lidar com requisições do tipo JSON
 app.use(express.json());
+//Middleware para arquivos estaticos
 app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'style')));
+app.use(express.static(path.join(__dirname, 'javascript')));
+app.use(express.static(path.join(__dirname, 'imagens')));
 
 
 //////////////////////////////////////////////////////
@@ -34,6 +38,13 @@ app.get('/', (req, res) => {
   //rota para acessar a página de cadastro de cliente
 app.get('/cadastro/cliente', (req, res) => {
   res.sendFile(path.join(__dirname, 'cadastro/Cliente/cadastroCliente.html'));
+});
+
+// Rota para receber dados de localização
+app.post('/api/localizacao', (req, res) => {
+  const { latitude, longitude } = req.body;
+  console.log("Localização recebida:", latitude, longitude);
+  res.json({ message: "Localização recebida com sucesso" });
 });
 
 // Endpoint para salvar cliente no banco de dados
