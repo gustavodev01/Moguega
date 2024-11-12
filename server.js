@@ -41,6 +41,11 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'login/login.html'));
 });
 
+// Rota para a página de login do cliente
+app.get('/autenticacao/cliente/loginCliente.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'autenticacao/cliente/loginCliente.html'));
+});
+
   //rota para acessar a página de cadastro de cliente
 app.get('/cadastro/cliente', (req, res) => {
   res.sendFile(path.join(__dirname, 'cadastro/Cliente/cadastroCliente.html'));

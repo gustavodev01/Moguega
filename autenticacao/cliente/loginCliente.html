@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Cliente</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/autenticacao/Estilos/loginCliente.css">
+</head>
+
+<body class="bg-dark d-flex justify-content-center align-items-center min-vh-100">
+    <div class="login-container">
+        <div class="login-card p-4">
+            <h2 class="text-center mb-4">Bem-vindo de volta!</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label text-light">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label text-light">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            </form>
+            <p class="text-center mt-3 text-muted">Esqueceu a senha? <a href="#" class="text-light">Recuperar acesso</a></p>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/loginCliente/loginCliente.js"></script>
+</body>
+
+</html>
